@@ -7,6 +7,10 @@ function Thermostat() {
   this.powerSavingMode = true;
 }
 
+Thermostat.prototype.currentTemp = function() {
+  return this.temperature;
+};
+
 Thermostat.prototype.tempu = function(){
   if(this.temperature < this.maxTemperature){
       this.temperature ++;
